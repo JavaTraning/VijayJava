@@ -1,0 +1,28 @@
+class Hello{
+	static String cName = "TCS";
+	 String name;
+	 int salary;
+	 void get(String s1,int s2){
+		 name = s1;
+		 salary = s2;
+	 }
+	 int add(int x1,int y1){
+		 return x1+y1;
+	 }
+	 void show(){
+		 System.out.println(name);
+		 System.out.println(salary);
+		 System.out.println(cName);
+	 }
+	 public static void main(String args[]){
+		 Hello h1 = new Hello();
+		 h1.get("Rajnish",101);
+		 h1.show();
+		 Hello ss1 = new Hello();
+		 ss1.get("Vijay",102);
+		 ss1.show();
+		 Hello h2 = new Hello();
+			 int z = h2.add(10,20);
+			 System.out.println("Total Sum = "+z);
+	 }
+}
