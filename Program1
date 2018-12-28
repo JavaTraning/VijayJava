@@ -1,0 +1,27 @@
+public class Prgm2 {
+static String cName = "hello";
+		String name;
+		int account_Num;
+		void get(String a, int b){
+			name = a;
+			account_Num = b;
+		}
+		void show(){
+			System.out.println(name);
+			System.out.println(account_Num);
+			//System.out.println(cName);
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Prgm2 pg = new Prgm2();
+		pg.name = "Lalu";
+		pg.show();
+		Prgm2 pg2 = pg;
+		pg2.name = "Bhalu";
+		//System.out.println(pg);
+		if(pg == pg2){
+			System.out.println("Same");
+		}
+	}
+
+}
