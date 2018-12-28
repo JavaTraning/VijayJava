@@ -1,0 +1,19 @@
+public class Prgm1 {
+static String  CName = "HCL";
+String name;
+int account_Num;
+void get(String a, int b){
+	name = a;
+	account_Num = b;
+}
+void show(){
+	System.out.println(name);
+	System.out.print(account_Num);
+	System.out.println(CName);
+}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+ Prgm1 pg = new Prgm1();
+ System.out.println(pg);
+	}
+}
