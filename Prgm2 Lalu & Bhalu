@@ -1,0 +1,20 @@
+class Prgm2 {
+	    static String cName = "HCL";
+		String name;
+		
+		void get(String a, int b){
+			name = a;
+		}
+		void show(){
+			System.out.println(name);
+			System.out.println(cName);
+		}
+	public static void main(String[] args) {
+		Prgm2 pg = new Prgm2();
+		pg.name = "Lalu";
+		Prgm2 pg1 = pg;
+		pg1.name = "Bhalu";
+		System.out.println(pg.name);		
+	}
+
+}
