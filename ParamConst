@@ -1,0 +1,11 @@
+class Temp14{
+	Temp14(){
+		System.out.println("Default");
+	}
+	void Temp14(){
+		System.out.println("Hello Java");
+	}
+	public static void main(String []args){
+		new Temp14().Temp14();
+	}
+}
