@@ -1,0 +1,24 @@
+class Temp15Copy {
+		String x;
+		String y;
+		Temp15Copy(String x, String y){
+			this.x= x;
+			this.y = y;
+		}
+		void show(){
+			System.out.println(x);
+			System.out.println(y);
+		}
+		Temp15Copy(Temp15Copy z){
+			this.x = z.x;
+			this.y = z.y;
+		}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Temp15Copy tmc = new Temp15Copy("Rajnish","Manas");
+		tmc.show();
+		Temp15Copy tmc1 = new Temp15Copy(tmc);
+		tmc1.show();
+	}
+
+}
