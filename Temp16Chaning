@@ -1,0 +1,17 @@
+class Temp16Chaning {
+	Temp16Chaning(){
+		this(10);
+		System.out.println("Default");
+	}
+	Temp16Chaning(int x){
+		this(10,20);
+		System.out.println(x);
+	}
+	Temp16Chaning(int x, int y){
+		System.out.println(x+y);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+			new Temp16Chaning();
+	}
+}
