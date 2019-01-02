@@ -1,0 +1,15 @@
+class Temp12 {
+	int x = this.getx();
+	int getx(){
+		System.out.println(x);
+		return 20;
+	}
+	Temp12(){
+		x = getx();
+		System.out.println(x);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		new Temp12();
+	}
+}
