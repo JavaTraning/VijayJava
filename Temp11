@@ -1,0 +1,23 @@
+class Temp11{
+	int x;
+	int y;
+	Temp11(){
+		x = 10;
+		y = 20;
+		show();
+	}
+	void show(){
+		System.out.println(x);
+		System.out.println(y);
+	}
+	static{
+		System.out.println("DDDDDDDDDDDd");
+		
+	}
+	public static void main(String [] args){
+		Temp11 tmp = new Temp11();
+		tmp.show();
+		Temp11 temp2 = new Temp11();
+		temp2.show();
+	}
+}
