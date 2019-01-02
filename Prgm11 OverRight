@@ -1,0 +1,19 @@
+class Prgm11 {
+	/*int salary;
+	int name;*/
+	void show(int x){
+		System.out.println("First method");
+	}
+	void show(int x, long l){
+		System.out.println("Second Method");
+	}
+	void show(int x, long l, char c){
+		System.out.println("Third Method");
+	}
+	public static void main(String[] args) {
+		Prgm11 pr1 = new Prgm11();
+		pr1.show(10);
+		pr1.show(10,10L);
+		pr1.show(10,10L,'t');
+	}
+}
