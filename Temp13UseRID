@@ -1,0 +1,20 @@
+class Temp13 {
+	int x;
+	int y;
+	Temp13(int x, int y){
+		this.x = x;
+		this.y = y;
+	}
+	void show(){
+		System.out.println(x);
+		System.out.println(y);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Temp13 tmp = new Temp13(10,20);
+		tmp.show();
+		Temp13 tmp1 = new Temp13(100,200);
+		tmp1.show();
+	}
+
+}
