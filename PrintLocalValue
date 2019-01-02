@@ -1,0 +1,13 @@
+class PrintLocalValue {
+   int x = 10;
+   void show(int x , PrintLocalValue pr){
+	   System.out.println("Print Local Variable Value" +x);
+	   System.out.println(pr.x);
+   }
+	public static void main(String[] args) {
+		// Create Object to access method
+		PrintLocalValue pr1 = new PrintLocalValue();
+		pr1.show(20, pr1);
+	}
+
+}
