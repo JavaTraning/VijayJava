@@ -1,0 +1,17 @@
+class initializer{
+	initializer(){
+		System.out.println("parent class constructor invoked");
+	}
+} 
+class initializer2 extends initializer{
+	initializer2(){
+		super();
+		System.out.println("child class constructor invoked");
+	}
+		{
+		System.out.println("instance initilizer block is invoked");
+		}
+	public static void main(String []args){
+		initializer2 b2 = new initializer2();
+	}
+}
