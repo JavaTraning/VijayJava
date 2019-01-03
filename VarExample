@@ -1,0 +1,12 @@
+class VarExample{
+	//var s = 10; //Error
+	public static void main(String []args){
+		var ch = 10;
+		//ch = true;
+		var z = "Hello";
+		var b = true;
+		System.out.println(ch);
+		System.out.println(z);
+		System.out.println(b);
+	}
+}
