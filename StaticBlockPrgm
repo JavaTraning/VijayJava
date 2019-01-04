@@ -1,0 +1,18 @@
+class Temp105{
+	static Demo d;
+	static{
+		System.out.println("Static Block ");
+		d = new Demo();
+	}
+}
+class Demo01{
+	void show(int x){
+		System.out.println(x);
+	}
+}
+class Demo02{
+	public static void main(String []args){
+		Temp105.d.show(100);
+		//System.out.println(Temp105().d);
+	}
+}
