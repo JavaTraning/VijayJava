@@ -1,0 +1,25 @@
+class Parent_Base{
+	int max_Speed = 180;
+	void Parent_Base(){
+		System.out.println("Parent_Base "+max_Speed);	
+	}
+}
+class Child_Class extends Parent_Base{
+	int max_Speed = 120; 
+  
+    void display(){
+		System.out.println("This is Speed "+max_Speed);
+	} 
+	public static void main(String...s){
+		//super.Parent_Base();
+		Child c = new Child();
+		c.display();
+	}
+}
+class Main_Class{
+	public static void main(String...s){
+		//super.Parent_Base();
+		Child c = new Child();
+		c.display();
+	}
+}
