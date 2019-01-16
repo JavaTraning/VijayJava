@@ -1,0 +1,19 @@
+class Parent_Base{
+    int x = 50;
+	public void show(){
+		System.out.println(x);
+		//System.out.println(super.x);
+	}
+}
+class Child4 extends Parent_Base{
+	int x = 80;
+	public void show(){
+		System.out.println(x);
+	}
+	public static void main(String...s){
+		Child4 c4 = new Child4();
+		c4.show();
+		Parent_Base pr = new Parent_Base();
+		pr.show();
+	}
+}
