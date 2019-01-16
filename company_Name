@@ -1,0 +1,28 @@
+class Rerurn_Type002{
+	static String company;
+	int salary;
+	String name;
+	public void printDetails(){
+		System.out.println("Name : "+name);
+		System.out.println("Company : "+company);
+		System.out.println("Salary : "+salary);
+	}
+	public static void main(String[]args){
+		Rerurn_Type002.company = "Google";
+		
+		Rerurn_Type002 rt = new Rerurn_Type002();
+		rt.name = "Rajnish";
+		rt.salary = 50000;
+		
+		Rerurn_Type002 rtt = new Rerurn_Type002();
+		rtt.name = "Manas";
+		rtt.salary = 70000;
+		rt.printDetails();
+		rtt.printDetails();
+		rt.company = "HCL";
+		rt.salary = 30000;
+		System.out.println("\nAfter change\n");
+		rt.printDetails();
+		rtt.printDetails();
+	}
+}
