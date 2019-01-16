@@ -1,0 +1,25 @@
+class Calculation{
+	int z;
+	public void addidation(int x, int y){
+		z = x+y;
+		System.out.println("The addition of given number = "+z);
+	}
+	public void substraction(int x, int y){
+		z = x-y;
+		System.out.println("The Substraction of given Number = "+z);
+	}
+}
+public class My_Calculation extends Calculation{
+		public void multiplication(int x, int y){
+			z = x * y;
+			System.out.println("The Multiplication of given Number = "+z);
+		}
+		public static void main(String...s){
+		My_Calculation cal = new My_Calculation();
+			int a = 20, b = 10;
+			
+			cal.addidation(a,b);
+			cal.substraction(a,b);
+			cal.multiplication(a,b);
+	}
+}
