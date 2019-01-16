@@ -1,0 +1,28 @@
+abstract class Base{
+	int x;
+	int y;
+	void show(){
+		System.out.println("Base "+x);
+		System.out.println("Base "+y);
+	}
+	abstract void display();
+}
+class Child_Class_Abs extends Base{
+	void get(int x, int y){
+		this.x = x;
+		this.y = y;
+		System.out.println("Child_Class extends Method");
+	}
+	void display(){
+		System.out.println("Child_Class Display Method");
+	}
+	public static void main(String []args){
+		Child_Class_Abs ch = new Child_Class_Abs();
+		ch.get(10,20);
+		ch.show();
+		//ch.display();
+		MyRegister my = new MyRegister();
+		//my.showw();
+		my.register(ch);
+	}
+}
